@@ -1,0 +1,9 @@
+.todoForm {
+    text-align: center;
+}
+
+.todoForm > form {
+    display: flex;
+    justify-content: center;
+}
+

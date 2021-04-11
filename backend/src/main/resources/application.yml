@@ -1,0 +1,42 @@
+micronaut:
+  security:
+    enabled: true
+    endpoints:
+      login:
+        enabled: true
+    token:
+      jwt:
+        enabled: true
+        signatures:
+          secret:
+            generator:
+              secret: jbthebestjbthebestjbthebestjbthebestjbthebest
+                jbthebestjbthebestjbthebestjbthebestjbthebestjbthebest
+                jbthebestjbthebestjbthebestjbthebestjbthebestjbthebest
+                jbthebestjbthebestjbthebestjbthebestjbthebestjbthebest
+                jbthebestjbthebestjbthebestjbthebestjbthebestjbthebest
+              jws-algorithm: HS256
+  application:
+    name: todolist
+  server:
+    cors:
+      enabled: true
+
+
+datasources:
+  default:
+    url: #your db url
+    driver-class-name: org.postgresql.Driver
+    username: #your db username
+    password: #your db password
+    dialect: org.hibernate.dialect.PostgreSQLDialect
+
+jpa:
+  default:
+    entity-scan:
+      packages: ru.jakev.entities
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        format_sql: true
