@@ -1,5 +1,5 @@
 # Todo list 
-Backend: Micronaut
+Backend: Micronaut<br>
 Frontend: React
 
 Для запуска приложения:<br>
