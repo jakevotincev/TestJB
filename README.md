@@ -1,4 +1,6 @@
-Тестовое задание JetBrains
+# Todo list 
+### Backend: Micronaut
+### Frontend: React
 
 Для запуска приложения:<br>
 1. Для доступа к бд необходимо указать в application.yaml: url, username, password 
